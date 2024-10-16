@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%); 
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Stone100);
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3%;
+    text-align: left;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--Brown800);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    margin: 5% 10%;
+    border-radius: 1.5rem;
+}
+
+h1 {
+    font-family: "Young Serif", sans-serif;
+    color: black;
+    font-size: 32px;
+}
+h3 {
+    font-family: "Young Serif", sans-serif;
+    font-weight: 400;
+    color: var(--Brown800);
+}
+
+p, li {
+    font-family: "Outfit", outfit;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--Stone600);
+}
+
+h1, h3 {margin: 1rem 0;}
+
+h4 {
+    color: var(--Rose800);
+}
+
+span {
+    font-weight: bold;
+}
+
+.image-section {
+    max-width: 45rem;
+}
+
+.content {
+    font-family: ;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 1.5rem;
+}
+ .preparation {
+    background-color: var(--Rose50);
+    padding: 4% 8%;
+    border-radius: 1.5rem;
+    margin: 5% 0;
+ }
+
+ .nutrition table {
+    width: 100%;
+ }
+
+ .ingredients {
+    padding-bottom: 2rem;
+    border-bottom: 1px var(--Stone150) solid;
+}
+
+.instructions {
+    padding-bottom: 2rem;
+    border-bottom: 1px var(--Stone150) solid;
+}
+
+ .nutrition table, td {
+    border-bottom: var(--Stone150) solid;
+    border-collapse: collapse;
+}
+
+.bold {
+    color: var(--Stone600);
+}
+
+@media screen and (max-width: 480px){
+
+    body {
+        background-color: var(--White);
+    }
+
+   main {
+    width: 100%;
+    margin: 0;
+    border-radius: none;
+   }
+
+   .container {
+    padding: 0 7%;
+   }
+
+   .image-section {
+    width: 100%;
+    height: 13rem;
+    padding: 0;
+    background-image: url(assets/images/image-omelette.jpeg);
+    background-size: cover;
+    background-position: center;
+   }
+
+   .image-section img {
+    display: none;
+   }
+    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
